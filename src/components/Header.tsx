@@ -27,7 +27,7 @@ export default function Header() {
       <div className="w-full flex justify-center bg-white">
         <div className="w-full max-w-[970px] h-[250px] bg-[#E84E89] relative overflow-hidden flex items-center justify-center">
           <img
-            src="/header.png"
+            src={`${import.meta.env.BASE_URL}header.png`}
             alt="Ad Banner"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -48,7 +48,7 @@ export default function Header() {
 
           <div className="w-1/3 flex justify-center">
             <img
-              src="/logo.png"
+              src={`${import.meta.env.BASE_URL}logo.png`}
               alt="Ad Banner"
               className="object-cover"
             />

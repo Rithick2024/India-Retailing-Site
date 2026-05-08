@@ -46,7 +46,7 @@ export default function Footer() {
 
           {/* Left Column: Info & Socials */}
           <div className="lg:col-span-4">
-            <img src="/logo.png" alt="IndiaRetailing" className="h-10 mb-6" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="IndiaRetailing" className="h-10 mb-6" />
 
             <div className="space-y-6 mb-8">
               <div>
@@ -98,8 +98,8 @@ export default function Footer() {
             <div>
               <h5 className="text-[14px] font-bold text-gray-700 mb-4">Download Indiaretailing App</h5>
               <div className="flex gap-3">
-                <img src="/googleplay.png" alt="Google Play" className="h-8 shadow-sm cursor-pointer" />
-                <img src="/appstore.png" alt="App Store" className="h-8 shadow-sm cursor-pointer" />
+                <img src={`${import.meta.env.BASE_URL}googleplay.png`} alt="Google Play" className="h-8 shadow-sm cursor-pointer" />
+                <img src={`${import.meta.env.BASE_URL}appstore.png`} alt="App Store" className="h-8 shadow-sm cursor-pointer" />
               </div>
             </div>
           </div>

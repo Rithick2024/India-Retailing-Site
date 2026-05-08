@@ -49,7 +49,7 @@ export default function WebSpecials() {
         <div className="lg:col-span-4 group cursor-pointer">
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
             <img
-              src="/rahul.png"
+              src={`${import.meta.env.BASE_URL}rahul.png`}
               alt="Main Feature"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />
@@ -82,7 +82,7 @@ export default function WebSpecials() {
           <div className="w-full h-[300px] flex flex-col items-center justify-center">
             <span className=" text-[10px] mt-4 text-gray-400 uppercase">- Advertisement -</span>
             <img
-              src="/advertisement.png"
+              src={`${import.meta.env.BASE_URL}advertisement.png`}
               alt="Ad"
               className="w-full h-full object-contain"
             />
@@ -110,7 +110,7 @@ export default function WebSpecials() {
           <div key={idx} className="group cursor-pointer">
             <div className="relative aspect-video overflow-hidden rounded-lg mb-3">
               <img
-                src={card.image}
+                src={`${import.meta.env.BASE_URL}${card.image.replace(/^\//, '')}`}
                 alt={card.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />

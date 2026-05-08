@@ -79,7 +79,7 @@ export default function LeadersInkSection() {
             <div key={idx} className="group cursor-pointer animate-in fade-in duration-500 shadow-lg rounded-lg p-1">
               <div className="h-[106px] overflow-hidden rounded-lg mb-4">
                 <img
-                  src={item.image}
+                  src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`}
                   alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -123,7 +123,7 @@ export default function LeadersInkSection() {
             <div key={idx} className="group cursor-pointer animate-in fade-in duration-500 shadow-lg rounded-lg p-2">
               <div className="relative h-[150px] overflow-hidden rounded-lg mb-4">
                 <img
-                  src={item.image}
+                  src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`}
                   alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

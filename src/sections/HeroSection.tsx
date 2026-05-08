@@ -53,7 +53,7 @@ export default function HeroSection() {
           {/* Main Featured Article */}
           <div className="relative w-full h-[300px] mb-6 overflow-hidden cursor-pointer group rounded-lg">
             <img
-              src="/rahul.png"
+              src={`${import.meta.env.BASE_URL}rahul.png`}
               alt="Rahul Gandhi"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -77,7 +77,7 @@ export default function HeroSection() {
               <div key={idx} className="flex items-center justify-between border-b border-gray-200 pb-5 last:border-0 last:pb-0 cursor-pointer group">
                 <div className="flex items-start w-full">
                   <img
-                    src={article.image}
+                    src={`${import.meta.env.BASE_URL}${article.image.replace(/^\//, '')}`}
                     alt={article.title}
                     className="w-[140px] h-[90px] object-cover rounded-lg flex-shrink-0"
                   />
@@ -111,7 +111,7 @@ export default function HeroSection() {
             {rightArticles.map((article, idx) => (
               <div key={idx} className="flex flex-col cursor-pointer group">
                 <img
-                  src={article.image}
+                  src={`${import.meta.env.BASE_URL}${article.image.replace(/^\//, '')}`}
                   alt={article.title}
                   className="w-full h-[150px] object-cover rounded-lg mb-3 group-hover:opacity-90 transition-opacity"
                 />

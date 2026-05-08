@@ -18,7 +18,7 @@ export default function NewsCard({ article, compact = false }: NewsCardProps) {
     <div className="group cursor-pointer flex flex-col h-full">
       <div className={`relative w-full overflow-hidden img-zoom-container bg-gray-100 rounded-lg mb-3 ${compact ? 'h-40' : 'h-48 md:h-56'}`}>
         <img
-          src={article.image}
+          src={article.image.startsWith('http') ? article.image : `${import.meta.env.BASE_URL}${article.image.replace(/^\//, '')}`}
           alt={article.title}
           className="w-full h-full object-cover img-zoom"
         />

@@ -176,7 +176,7 @@ export default function BottomSections() {
     <div className="max-w-[1240px] mx-auto px-4 py-10 bg-white">
       {/* Top Banner */}
       <div className="w-3/4 mx-auto mb-10">
-        <img src="/guesswatch.png" alt="Guess Watches Ad" className="w-full h-auto rounded-lg shadow-sm" />
+        <img src={`${import.meta.env.BASE_URL}guesswatch.png`} alt="Guess Watches Ad" className="w-full h-auto rounded-lg shadow-sm" />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -194,7 +194,7 @@ export default function BottomSections() {
               <div key={idx} className="flex gap-4 group cursor-pointer">
                 <div className="w-1/3 flex-shrink-0">
                   <div className="aspect-square overflow-hidden rounded-lg bg-gray-100">
-                    <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                 </div>
                 <div className="w-2/3">
@@ -224,7 +224,7 @@ export default function BottomSections() {
             {beautyItems.map((item, idx) => (
               <div key={idx} className="flex gap-4 group cursor-pointer border-b border-gray-50 pb-4 last:border-0 last:pb-0">
                 <div className="w-20 h-20 flex-shrink-0 overflow-hidden rounded-lg bg-gray-100">
-                  <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="flex-1">
                   <div className="text-[10px] font-bold mb-1">
@@ -248,7 +248,7 @@ export default function BottomSections() {
           {foodItems.map((item, idx) => (
             <div key={idx} className="group cursor-pointer">
               <div className="aspect-video overflow-hidden rounded-lg mb-3 bg-gray-100">
-                <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h3 className="text-[13px] font-bold leading-snug group-hover:text-red-600 transition-colors line-clamp-2">{item.title}</h3>
               <span className="text-[10px] text-gray-400 mt-1 block">#Lifestyle</span>
@@ -271,7 +271,7 @@ export default function BottomSections() {
               {section.items.map((item, iIdx) => (
                 <div key={iIdx} className="flex gap-4 group cursor-pointer border-b border-gray-50 pb-4 last:border-0 last:pb-0">
                   <div className="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg bg-gray-100">
-                    <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="flex-1">
                     <div className="text-[9px] font-bold mb-1">
@@ -302,7 +302,7 @@ export default function BottomSections() {
               <div key={idx} className="flex gap-6 group cursor-pointer">
                 <div className="w-[40%] flex-shrink-0">
                   <div className="h-[150px] overflow-hidden rounded-lg bg-gray-100">
-                    <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                 </div>
                 <div className="w-[60%]">
@@ -329,7 +329,7 @@ export default function BottomSections() {
             </div>
             <div className="group cursor-pointer">
               <div className="relative aspect-video overflow-hidden rounded-lg mb-3 bg-gray-100">
-                <img src="/privilege.png" alt="Privilege Corner" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src={`${import.meta.env.BASE_URL}privilege.png`} alt="Privilege Corner" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
                     <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-white border-b-[6px] border-b-transparent ml-1"></div>
@@ -351,7 +351,7 @@ export default function BottomSections() {
               {podcastItems.map((item, idx) => (
                 <div key={idx} className="flex gap-4 group cursor-pointer border-b border-gray-50 pb-4 last:border-0 last:pb-0">
                   <div className="w-16 h-16 flex-shrink-0 overflow-hidden rounded-lg bg-gray-100">
-                    <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-[13px] font-bold leading-snug group-hover:text-red-600 transition-colors line-clamp-2 mb-1">{item.title}</h3>
@@ -366,7 +366,7 @@ export default function BottomSections() {
 
       {/* Center Ad Banner */}
       <div className="w-full my-16">
-        <img src="/air_banner.png" alt="AIR Ad" className="w-3/4 mx-auto h-[80px]" />
+        <img src={`${import.meta.env.BASE_URL}air_banner.png`} alt="AIR Ad" className="w-3/4 mx-auto h-[80px]" />
       </div>
 
       {/* Triple Column Grid 2 */}
@@ -382,7 +382,7 @@ export default function BottomSections() {
             {supplyChainItems.map((item, idx) => (
               <div key={idx} className="flex gap-4 group cursor-pointer border-b border-gray-50">
                 <div className="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg bg-gray-100 relative">
-                  <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute bottom-1 left-1 bg-black/40 px-1 py-0.5 rounded text-[8px] text-white flex items-center gap-1">
                     <div className="w-1.5 h-1.5 bg-white/60 rounded-full"></div> 1 min
                   </div>
@@ -411,7 +411,7 @@ export default function BottomSections() {
             {marketingItems.map((item, idx) => (
               <div key={idx} className="flex gap-4 group cursor-pointer border-b border-gray-50">
                 <div className="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg bg-gray-100 relative">
-                  <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute bottom-1 left-1 bg-black/40 px-1 py-0.5 rounded text-[8px] text-white flex items-center gap-1">
                     <div className="w-1.5 h-1.5 bg-white/60 rounded-full"></div> 1 min
                   </div>
@@ -440,7 +440,7 @@ export default function BottomSections() {
             {techItems.map((item, idx) => (
               <div key={idx} className="flex gap-4 group cursor-pointer border-b border-gray-50 pb-4 last:border-0 last:pb-0">
                 <div className="w-20 h-14 flex-shrink-0 overflow-hidden rounded-lg bg-gray-100">
-                  <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="flex-1">
                   <div className="text-[8px] font-bold mb-0.5">
@@ -468,7 +468,7 @@ export default function BottomSections() {
             {caseStudyItems.map((item, idx) => (
               <div key={idx} className="group cursor-pointer">
                 <div className="aspect-square overflow-hidden rounded-lg mb-3 bg-gray-100 relative">
-                  <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute bottom-2 left-2 bg-white/90 p-1 rounded-full">
                     <div className="w-3 h-3 bg-gray-400 rounded-lg"></div>
                   </div>
@@ -491,7 +491,7 @@ export default function BottomSections() {
             {photoEssayItems.map((item, idx) => (
               <div key={idx} className="group cursor-pointer">
                 <div className="aspect-square overflow-hidden rounded-lg mb-3 bg-gray-100 relative">
-                  <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute bottom-2 left-2 bg-white/90 p-1 rounded-full">
                     <div className="w-3 h-3 bg-gray-400 rounded-lg"></div>
                   </div>
@@ -517,7 +517,7 @@ export default function BottomSections() {
           {/* Featured Event */}
           <div className="lg:col-span-4 bg-gray-50 p-6 rounded-lg group cursor-pointer">
             <div className="aspect-[4/5] overflow-hidden rounded-lg mb-4 bg-white p-4">
-              <img src="/event_main.png" alt="Featured Event" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
+              <img src={`${import.meta.env.BASE_URL}event_main.png`} alt="Featured Event" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="text-[10px] font-bold text-red-600 uppercase mb-2">Technology</div>
             <h3 className="text-lg font-bold mb-2 group-hover:text-red-600 transition-colors">D2C India</h3>
@@ -532,7 +532,7 @@ export default function BottomSections() {
             {groupEventsItems.map((event, idx) => (
               <div key={idx} className="flex gap-4 p-4 bg-white border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
                 <div className="w-24 h-24 flex-shrink-0 bg-gray-50 rounded-lg overflow-hidden p-2">
-                  <img src={event.image} alt={event.title} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
+                  <img src={`${import.meta.env.BASE_URL}${event.image.replace(/^\//, '')}`} alt={event.title} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="flex-1 flex flex-col justify-between py-1">
                   <div>
@@ -562,7 +562,7 @@ export default function BottomSections() {
           {bookItems.map((book, idx) => (
             <div key={idx} className="group cursor-pointer">
               <div className="aspect-[3/4] overflow-hidden rounded-lg mb-3 shadow-md border border-gray-100 bg-gray-50">
-                <img src={book.image} alt={book.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src={`${import.meta.env.BASE_URL}${book.image.replace(/^\//, '')}`} alt={book.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h3 className="text-[12px] font-bold leading-tight group-hover:text-red-600 transition-colors">{book.title}</h3>
             </div>
@@ -583,7 +583,7 @@ export default function BottomSections() {
             {reconnectItems.map((item, idx) => (
               <div key={idx} className="group cursor-pointer">
                 <div className="h-[150px] overflow-hidden rounded-lg mb-3 bg-gray-100">
-                  <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <h3 className="text-[14px] font-bold leading-snug group-hover:text-red-600 transition-colors mb-2">{item.title}</h3>
                 <p className="text-[11px] text-gray-400 line-clamp-2 mb-2">{item.excerpt}</p>
@@ -595,7 +595,7 @@ export default function BottomSections() {
             <div className="h-[270px] flex flex-col">
               <span className="text-[10px] text-gray-400 uppercase text-center mb-1">- Advertisement -</span>
               <div className="flex-1 bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <img src="/reconnect_ad.png" alt="Ad" className="w-full h-full object-cover" />
+                <img src={`${import.meta.env.BASE_URL}reconnect_ad.png`} alt="Ad" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -605,7 +605,7 @@ export default function BottomSections() {
       {/* Final Ad Banner */}
       <div className="w-full mt-16 pb-10">
         <span className="text-[10px] text-gray-400 uppercase text-center block mb-1">- Advertisement -</span>
-        <img src="/air_banner.png" alt="AIR Ad" className="w-3/4 mx-auto h-[80px]" />
+        <img src={`${import.meta.env.BASE_URL}air_banner.png`} alt="AIR Ad" className="w-3/4 mx-auto h-[80px]" />
       </div>
     </div>
   );

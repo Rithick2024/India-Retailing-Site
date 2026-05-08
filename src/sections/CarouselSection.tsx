@@ -46,7 +46,7 @@ export default function CarouselSection() {
           <div key={`carousel-${article.id}-${idx}`} className="w-[280px] md:w-[320px] flex-shrink-0 snap-start group cursor-pointer">
             <div className="relative h-40 w-full rounded overflow-hidden img-zoom-container bg-gray-100 mb-3">
               <img 
-                src={article.image} 
+                src={article.image.startsWith('http') ? article.image : `${import.meta.env.BASE_URL}${article.image.replace(/^\//, '')}`} 
                 alt={article.title} 
                 className="w-full h-full object-cover img-zoom"
               />

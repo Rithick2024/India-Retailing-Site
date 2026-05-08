@@ -42,7 +42,7 @@ export default function DarkSection() {
           <div className="lg:col-span-5">
             <div className="relative aspect-video lg:aspect-auto lg:h-full group cursor-pointer overflow-hidden rounded-lg">
               <img
-                src="/videowall1.png"
+                src={`${import.meta.env.BASE_URL}videowall1.png`}
                 alt="Main Video"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80"
               />
@@ -68,7 +68,7 @@ export default function DarkSection() {
                     <div key={i} className="group cursor-pointer">
                       <div className="relative aspect-video overflow-hidden rounded-lg mb-2">
                         <img
-                          src={item.image}
+                          src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`}
                           alt={item.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-70 group-hover:opacity-100"
                         />

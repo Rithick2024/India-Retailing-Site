@@ -24,7 +24,7 @@ export default function TopCardsRow() {
           {cards.map((card, idx) => (
             <div key={idx} className="bg-white flex items-center p-3 rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow">
               <img
-                src={card.image}
+                src={`${import.meta.env.BASE_URL}${card.image.replace(/^\//, '')}`}
                 alt={card.title}
                 className="w-24 h-16 object-cover rounded-lg flex-shrink-0"
               />
